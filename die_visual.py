@@ -18,7 +18,7 @@ for value in range(2, max_result+1):
 #结果可视化
 hist = pygal.Bar()
 
-hist.title = "Results of rolling two D6 dice 1000 times."
+hist.title = "Results of rolling D6+D10 dice 1000 times."
 hist.x_labels = ['2','3','4','5','6','7','8','9','10','11','12','13','14','15','16']
 hist.x_title = "Result"
 hist.y_title = "Frequency of Result"
