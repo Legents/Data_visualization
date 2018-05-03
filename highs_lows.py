@@ -7,8 +7,8 @@ with open(filename) as f:
     reader = csv.reader(f)
     header_row = next(reader)
     
-    for index,column_header in enumerate(header_row):
-        print(index, column_header)
+    #for index,column_header in enumerate(header_row):
+        #print(index, column_header)
     #获取日期 最高最低  
     dates, highs, lows = [],[],[]
     for row in reader:
