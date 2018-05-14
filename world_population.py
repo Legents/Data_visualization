@@ -1,5 +1,6 @@
 import json
 import pygal
+from pygal.style import RotateStyle
 from country_codes import get_country_code
 
 
@@ -30,6 +31,8 @@ for cc, pop in cc_populations.items():
 #查看每组包含的国家数量
 print(len(cc_pops_1),len(cc_pops_2), len(cc_pops_3)) 			
 wm = pygal.Worldmap()
+wm_style = RotateStyle('#336699')
+wm = pygal.Worldmap(style=wm_style)
 wm.title = 'World Population in 2010, by Country'
 wm.add('0-10m',cc_pops_1)
 wm.add('10m-1bn',cc_pops_2)
