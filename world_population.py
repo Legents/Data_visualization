@@ -31,7 +31,7 @@ for cc, pop in cc_populations.items():
 		cc_pops_4[cc] = pop
 		
 #查看每组包含的国家数量
-#print(len(cc_pops_1),len(cc_pops_2), len(cc_pops_3)) 			
+print(len(cc_pops_1),len(cc_pops_2), len(cc_pops_3),len(cc_pops_4)) 			
 wm = pygal.Worldmap()
 wm_style = RotateStyle('#112233')
 wm = pygal.Worldmap(style=wm_style)
